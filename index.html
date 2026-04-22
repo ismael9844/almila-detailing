@@ -90,7 +90,15 @@
 
     /* ── VIDEOS — portrait, loop continu ── */
     #videos-section{background:var(--deep);border-top:1px solid var(--border);}
-    .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:3rem;}
+.video-grid {
+    display: flex;            /* Utilise Flexbox pour aligner les éléments */
+    justify-content: center;  /* Centre les deux vidéos horizontalement */
+    gap: 15px;                /* Espace entre les deux vidéos */
+    margin-top: 3rem;
+    max-width: 1000px;        /* Empêche que la grille soit trop large */
+    margin-left: auto;        /* Centre le bloc entier */
+    margin-right: auto;
+}
     .video-slot{background:var(--card);aspect-ratio:9/16;position:relative;overflow:hidden;cursor:pointer;border-radius:10px;}
     .video-slot video{width:100%;height:100%;object-fit:cover;display:block;}
     .video-slot.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;border:1px dashed var(--border);}
@@ -465,7 +473,6 @@ const logoSrc = 'data:image/png;base64,' + LOGO_B64;
 const VIDEOS = [
   { src: 'video1.mp4',  label: 'KOLTUK YIKAMA' },
   { src: 'video2.mp4',   label: 'MOTOR TEMİZLİĞİ' },
-  { src: 'video3.mp4', label: 'OTO DETAYLı TEMİZLİK' },
 ];
 
 (function initVideos() {
