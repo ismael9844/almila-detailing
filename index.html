@@ -517,14 +517,14 @@ function toggleVid(btn) {
 // 3. Remplacez img:''  par  img:'images/photo1.jpg'
 // 4. Remplacez url:'' par le lien direct du post Instagram
 const IG_POSTS = [
-  { url: 'https://www.instagram.com/almiladetailing/reel/DXKK6-FCKc1/', label: 'MAYBACH',    img: '/blob/main/insta_maybach.png' },
-  { url: 'https://www.instagram.com/almiladetailing/',   label: 'MERCEDES GLC220',    img: '/blob/main/insta_merco.png' },
-  { url: 'https://www.instagram.com/almiladetailing/',   label: 'VOLVO S90',     img: 'insta_volvo.png' },
-  { url: 'https://www.instagram.com/p/DWrbto4CE7V/',   label: 'PORSCHE CAYENNE', img: 'insta_porsche.png' },
-  { url: 'https://www.instagram.com/p/DRU6bRaiKkl/',   label: 'KOLTUK YIKAMA',     img: 'Koltuk.JPG' },
-  { url: 'https://www.instagram.com/p/DV1JNGoiDt2/',   label: 'MUSTANG GT',         img: 'insta_mustang.png' },
-  { url: 'https://www.instagram.com/p/DUf_jpeiHmU/',   label: 'PORSCHE CAYENNE',   img: 'insta_merco2.png' },
-  { url: 'https://www.instagram.com/stories/highlights/18314340115252400/',   label: 'MOTOR TEMİZLİĞİ',   img: 'motor2.png' },
+  { url: 'https://www.instagram.com/almiladetailing/reel/DXKK6-FCKc1/', label: 'MAYBACH',    img: 'insta_maybach.PNG' },
+  { url: 'https://www.instagram.com/almiladetailing/',   label: 'MERCEDES GLC220',    img: 'insta_merco.PNG' },
+  { url: 'https://www.instagram.com/almiladetailing/',   label: 'VOLVO S90',     img: 'insta_volvo.PNG' },
+  { url: 'https://www.instagram.com/p/DWrbto4CE7V/',   label: 'PORSCHE CAYENNE', img: 'insta_porsche.PNG' },
+  { url: 'https://www.instagram.com/p/DRU6bRaiKkl/',   label: 'KOLTUK YIKAMA',     img: 'Koltuk.jpg' },
+  { url: 'https://www.instagram.com/p/DV1JNGoiDt2/',   label: 'MUSTANG GT',         img: 'insta_mustang.PNG' },
+  { url: 'https://www.instagram.com/p/DUf_jpeiHmU/',   label: 'PORSCHE CAYENNE',   img: 'insta_merco2.PNG' },
+  { url: 'https://www.instagram.com/stories/highlights/18314340115252400/',   label: 'MOTOR TEMİZLİĞİ',   img: 'motor2.PNG' },
 ];
 
 // Couleurs de fond de secours si pas d'image
@@ -570,7 +570,7 @@ const BG_COLORS = [
   cta.href = 'https://www.instagram.com/almiladetailing';
   cta.target = '_blank';
   cta.rel = 'noopener';
-  cta.innerHTML = `<div class="ig-logo">📷</div><p data-tr="Tüm çalışmaları Instagram'da gör" data-en="See all works on Instagram">Tüm çalışmaları<br>Instagram'da gör</p>`;
+  cta.innerHTML = `<div class="ig-logo"></div><p data-tr="Tüm çalışmaları Instagram'da gör" data-en="See all works on Instagram">Tüm çalışmaları<br>Instagram'da gör</p>`;
   grid.appendChild(cta);
 })();
 
